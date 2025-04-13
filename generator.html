@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Генератор тестів</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Генератор тестів</h1>
+    <form id="test-form">
+      <label>Тема:
+        <select id="topic">
+          <option>Механіка</option>
+          <option>Електрика</option>
+          <option>Оптика</option>
+        </select>
+      </label><br><br>
+      
+      <label>Рівень складності:
+        <select id="difficulty">
+          <option>Легкий</option>
+          <option>Середній</option>
+          <option>Важкий</option>
+        </select>
+      </label><br><br>
+
+      <label>Кількість запитань:
+        <input type="number" id="count" min="1" max="20" value="5">
+      </label><br><br>
+
+      <button type="submit" class="btn">Згенерувати тест</button>
+    </form>
+
+    <div id="test-output"></div>
+  </div>
+
+  <script src="js/generator.js"></script>
+</body>
+</html>
